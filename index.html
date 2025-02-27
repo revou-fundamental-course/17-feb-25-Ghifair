@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#package">Our Package</a></li>
+                <li><a href="#contact">Call Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner and Contact Section -->
+        <div class="row">
+            <section id="home" class="banner">
+                <h1>Your Trusted Travel Agent</h1>
+                <p>Your happiness is our happiness</p>
+                <div class="slider">
+                    <img src="https://fakeimg.pl/600x400?text=japan_review" alt="Slide 1" class="slide active">
+                    <img src="https://fakeimg.pl/600x400?text=bali_review" alt="Slide 2" class="slide">
+                    <img src="https://fakeimg.pl/600x400?text=singapore_review" alt="Slide 3" class="slide">
+                </div>
+
+
+                <!-- Review Section -->
+                <div class="review">
+                    <div class="review-content">
+                        <p id="review-text">"Great service! The trip was amazing."</p>
+                        <p id="review-author">- John Doe</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <select id="interest" required>
+                        <option value="">What are you interested in?</option>
+                        <option value="bali">Bali</option>
+                        <option value="japan">Japan</option>
+                        <option value="singapore">Singapore</option>
+                    </select>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- Our Package Section -->
+        <section id="package">
+            <h2>Our Package</h2>
+            <div class="packages">
+                <div class="package">Bali</div>
+                <div class="package">Japan</div>
+                <div class="package">Singapore</div>
+                <div class="package">Bandung</div>
+                <div class="package">Surabaya</div>
+            </div>
+        </section>
+
+        <section id="cta">
+            <h1>Interested?</h1>
+            <p>Book now and get special discount</p>
+            <button>Book Now</button>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
